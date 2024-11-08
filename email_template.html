@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Check-in</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .qr-code {
+            margin: 20px 0;
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Blue corners */
+        .corner-top-left,
+        .corner-bottom-right {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        .corner-top-left {
+            top: 0;
+            left: 0;
+            border-width: 50px 50px 0 0;
+            border-color: #1e3a8a transparent transparent transparent;
+        }
+
+        .corner-bottom-right {
+            bottom: 0;
+            right: 0;
+            border-width: 0 0 50px 50px;
+            border-color: transparent transparent #1e3a8a transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="corner-top-left"></div>
+        <div class="corner-bottom-right"></div>
+
+        <div class="header">Event Check-in</div>
+
+        <div class="content">
+            Hello Francis,<br><br>
+            Thank you for registering. Kindly make use of the QR code below to check in and receive your gift item.
+        </div>
+
+        <div class="qr-code">
+            <!-- Replace the src attribute with the URL of your QR code image -->
+            <img src="https://via.placeholder.com/150" alt="QR Code" width="150" height="150">
+        </div>
+
+        <div class="footer">
+            Thank you.
+        </div>
+    </div>
+
+</body>
+
+</html>
